@@ -1,0 +1,51 @@
+{
+  "name": "react-webpack-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "projectConfig": {
+    "it": {
+      "version": "1.1.0",
+      "theme": "theme-webpack-test",
+      "module": {
+        "name": "webpack-test",
+        "icon": "🗿"
+      }
+    }
+  },
+  "scripts": {
+    "start":      "webpack serve --env NODE_ENV=development --env NODE_TYPE=it --mode development",
+    "developone": "webpack serve --env NODE_ENV=none --env NODE_TYPE=it",
+    "develop":    "webpack --env NODE_ENV=development --env NODE_TYPE=it --mode development",
+    "test":       "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "autoprefixer": "^10.2.4",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.1",
+    "eslint-loader": "^4.0.2",
+    "mini-css-extract-plugin": "^1.3.9",
+    "postcss-loader": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-webpack-plugin": "^2.5.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
